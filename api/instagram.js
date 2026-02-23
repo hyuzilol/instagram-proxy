@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      `https://instagram-scraper.p.rapidapi.com/v1/getUserDataByUsername?username=${username}`,
+      `https://instagram-scraper.p.rapidapi.com/v1/instagram/profile/${username}`,
       {
         headers: {
           "x-rapidapi-host": "instagram-scraper.p.rapidapi.com",
